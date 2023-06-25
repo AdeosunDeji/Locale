@@ -76,7 +76,7 @@ describe('Locator Route', () => {
 
     const response2 = await request(app)
     .get("/api/v1/states/state")
-    .query({ name: "carlifonia" })
+    .query({ name: "carliifonia" })
     .set('Authorization', apiKey);
 
     expect(response2.statusCode).toBe(404)
